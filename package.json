@@ -1,7 +1,12 @@
 {
   "dependencies": {
     "es6": "^0.0.7",
-    "express": "^4.21.1"
-    
-  }
+    "express": "^4.21.1",
+    "mongodb": "^6.11.0"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file=.env server.js",
+    "Tests": ""
+  },
+  "type": "module"
 }

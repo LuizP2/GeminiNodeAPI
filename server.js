@@ -1,8 +1,11 @@
 import express from 'express';
+import connectDB from "./src/config/configDB.js"
+const log = console.log;
+
+await connectDB(process.env.STRING_CONEXAO)
 
 const app = express();
 app.use(express.json())
-const log = console.log;
 const pub = [
     {
         ID: 1,
