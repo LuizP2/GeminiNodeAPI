@@ -1,17 +1,17 @@
 import {MongoClient} from "mongodb"
 
-export default async function DBconnect(connectionString) {
-    let client;
+export default async function DBconnect(stringconexao) {
+    let mongoClient;
     
     try{
-        client = new client(connectionString)
+        mongoClient = new MongoClient(stringconexao)
         console.log("Cluster sucessifully connected")
-        await client.connect()
+        await mongoClient.connect()
         console.log("Atlas sucessifully connected")
 
-        return client
-    }catch{
-        console.log("Connection failed!")
+        return mongoClient
+    }catch (erro){
+        console.error("Connection failed!", erro, "Node do krlh")
         process.exit
     }
 }
