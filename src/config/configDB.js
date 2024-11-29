@@ -12,6 +12,6 @@ export default async function DBconnect(stringconexao) {
         return mongoClient
     }catch (erro){
         console.error("Connection failed!", erro, "Node do krlh")
-        process.exit
+        process.exit()
     }
 }
