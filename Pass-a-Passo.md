@@ -25,3 +25,8 @@ package.Json{
     "npm run dev" no terminal
 }
 
+gemini {
+     https://aistudio.google.com/apikey
+
+     key: AIzaSyCuSPb-dor8qblASyaAKUUOjVV3AbN9XTE
+}
